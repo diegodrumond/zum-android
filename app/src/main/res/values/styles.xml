@@ -1,0 +1,125 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="RootTheme.DragonFly" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Theme.DragonFly.Base" parent="RootTheme.DragonFly">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/defaultBackground</item>
+        <!--<item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>-->
+        <item name="android:windowAnimationStyle">@style/Theme.DragonFly.ActivityAnimation</item>
+    </style>
+
+    <style name="Theme.DragonFly.ActivityAnimation" parent="android:Theme.Translucent">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="Theme.DragonFly" parent="Theme.DragonFly.Base" />
+
+    <style name="Theme.DragonFly.WithNavDrawer" parent="Theme.DragonFly" />
+
+    <style name="Theme.DragonFly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DragonFly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="CustomCirclePageIndicator">-->
+        <!--<item name="fillColor">#FFFFFF</item>-->
+        <!--<item name="strokeColor">#FFFFFF</item>-->
+        <!--<item name="strokeWidth">2dp</item>-->
+        <!--<item name="radius">10dp</item>-->
+        <!--<item name="centered">true</item>-->
+    <!--</style>-->
+
+    <!-- HomeActivity theme. -->
+    <style name="Theme.DragonFly.HomeActivity.Base" parent="Theme.DragonFly.WithNavDrawer" />
+
+    <style name="Theme.DragonFly.HomeActivity" parent="Theme.DragonFly.HomeActivity.Base" />
+
+    <style name="Theme.DragonFly.HomeActivity.AppBarLayout" parent="Widget.Design.AppBarLayout">
+        <item name="elevation">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.DragonFly.HomeActivity.ContentTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.HomeActivity.Text1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.HomeActivity.Text2" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.NavMenu.Text1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">@dimen/abc_text_size_menu_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.NavMenu.Text2" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">@dimen/abc_text_size_menu_material</item>
+        <item name="android:textColor">@color/sea</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.PlacesCreateActivity.Text1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <!-- PlacesActivity theme. -->
+    <style name="Theme.DragonFly.PlacesActivity.Base" parent="Theme.DragonFly.WithNavDrawer" />
+
+    <style name="Theme.DragonFly.PlacesActivity" parent="Theme.DragonFly.PlacesActivity.Base" />
+
+    <style name="TextAppearance.DragonFly.PlacesActivity.BackdropText" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/grayish_brown</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.PlacesActivity.ListItem.Text1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.DragonFly.PlacesActivity.ListItem.Text2" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- PlacesCreateActivity theme. -->
+    <style name="Theme.DragonFly.PlacesCreateActivity.Base" parent="Theme.DragonFly" />
+
+    <style name="Theme.DragonFly.PlacesCreateActivity" parent="Theme.DragonFly.PlacesCreateActivity.Base" />
+
+    <!-- CheckLogActivity theme. -->
+    <style name="Theme.DragonFly.CheckLogActivity.Base" parent="Theme.DragonFly.WithNavDrawer" />
+
+    <style name="Theme.DragonFly.CheckLogActivity" parent="Theme.DragonFly.CheckLogActivity.Base" />
+
+    <!-- InviteActivity theme. -->
+    <style name="Theme.DragonFly.InviteActivity.Base" parent="Theme.DragonFly.WithNavDrawer" />
+
+    <style name="Theme.DragonFly.InviteActivity" parent="Theme.DragonFly.InviteActivity.Base" />
+
+    <!-- AboutActivity theme. -->
+    <style name="Theme.DragonFly.AboutActivity.Base" parent="Theme.DragonFly.WithNavDrawer" />
+
+    <style name="Theme.DragonFly.AboutActivity" parent="Theme.DragonFly.AboutActivity.Base" />
+
+    <!-- AuthenticatorActivity theme. -->
+    <style name="Theme.DragonFly.AuthenticatorActivity.Base" parent="Theme.DragonFly" />
+
+    <style name="Theme.DragonFly.AuthenticatorActivity" parent="Theme.DragonFly.AuthenticatorActivity.Base" />
+
+    <!-- SignUpActivity theme. -->
+    <style name="Theme.DragonFly.SignUpActivity.Base" parent="Theme.DragonFly" />
+
+    <style name="Theme.DragonFly.SignUpActivity" parent="Theme.DragonFly.SignUpActivity.Base" />
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_background">
+
+    <ScrollView android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icUser"
+                android:src="@drawable/ic_login"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/icUser"
+                android:id="@+id/editPhoto"
+                android:layout_alignEnd="@+id/icUser" />
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/accountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_label"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/accountEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_label"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <Button android:id="@+id/btnAlterarSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:text="  Editar Senha"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/saircopy"
+                    android:background="@drawable/btn_login"
+                    android:padding="10dp"
+                    android:textColor="@color/darkish_pink"/>
+
+            <Button android:id="@+id/btnSair"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:text="  Sair"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/sair"
+                    android:background="@drawable/btn_login"
+                    android:padding="10dp"
+                    android:textColor="@color/darkish_pink" />
+
+            <Button android:id="@+id/btnSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Salvar"
+                    android:background="@drawable/btn_primary"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"/>
+
+
+        </LinearLayout></ScrollView>
+</LinearLayout>

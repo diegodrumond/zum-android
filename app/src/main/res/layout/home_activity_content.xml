@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:theme="@style/Theme.DragonFly.HomeActivity.ContentTheme"
+    tools:context=".home.ui.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_action_check_mosquito" />
+
+        <TextView
+            android:id="@+id/last_verification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_activity_space_between_button_and_text"
+            android:text="@string/x_period"
+            android:visibility="invisible"
+            android:textAppearance="@style/TextAppearance.DragonFly.HomeActivity.Text1" />
+
+        <TextView
+            android:id="@+id/last_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.DragonFly.HomeActivity.Text2" />
+    </LinearLayout>
+</FrameLayout>

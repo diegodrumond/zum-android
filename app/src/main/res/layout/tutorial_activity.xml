@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorial_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<com.viewpagerindicator.CirclePageIndicator-->
+        <!--android:id="@+id/pager_indicator"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_above="@+id/button_container"-->
+        <!--android:layout_marginBottom="16dp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tutorial_jump"
+        android:gravity="right"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:id="@+id/tutorial_pular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/indicator_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:background="@drawable/selector_tutorial_indicator" />
+
+        <LinearLayout
+            android:id="@+id/indicator_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_tutorial_indicator"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/transparent_black_50"
+            android:textColor="@color/white"
+            android:text="@string/tutorial_anterior"
+            android:id="@+id/tutorial_anterior"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/transparent_black_30"
+            android:textColor="@color/white"
+            android:text="@string/tutorial_next"
+            android:id="@+id/tutorial_proximo"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

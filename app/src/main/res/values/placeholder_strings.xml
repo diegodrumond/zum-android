@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="normal_person_name_placeholder" />
+    <string name="email_placeholder" />
+    <string name="short_text_placeholder" />
+    <string name="medium_text_placeholder" />
+    <string name="long_text_placeholder" />
+    <string name="longest_text_placeholder" />
+    <string name="date_placeholder" />
+    <string name="date_time_placeholder" />
+    <string name="time_placeholder" />
+    <string name="number_placeholder" />
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.hotmart.dragonfly"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DragonFly">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".tutorial.ui.TutorialActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DragonFly.Base"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".home.ui.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DragonFly.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".places.ui.PlacesActivity"
+            android:label="@string/my_places"
+            android:parentActivityName=".home.ui.HomeActivity"
+            android:theme="@style/Theme.DragonFly.PlacesActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.ui.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".places.ui.PlacesCreateActivity"
+            android:label="@string/places_create"
+            android:parentActivityName=".places.ui.PlacesActivity"
+            android:theme="@style/Theme.DragonFly.PlacesCreateActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".places.ui.PlacesActivity" />
+        </activity>
+        <activity
+            android:name=".check.ui.CheckLogActivity"
+            android:label="@string/check_log"
+            android:parentActivityName=".home.ui.HomeActivity"
+            android:theme="@style/Theme.DragonFly.CheckLogActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.ui.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".invite.ui.InviteActivity"
+            android:label="@string/invite_friends"
+            android:parentActivityName=".home.ui.HomeActivity"
+            android:theme="@style/Theme.DragonFly.InviteActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.ui.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".about.ui.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName=".home.ui.HomeActivity"
+            android:theme="@style/Theme.DragonFly.AboutActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.ui.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".signup.ui.SignUpActivity"
+            android:label="@string/sign_up_title"
+            android:parentActivityName=".signup.ui.SignUpActivity"
+            android:theme="@style/Theme.DragonFly.SignUpActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".authenticator.ui.AuthenticatorActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DragonFly.AuthenticatorActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <service
+            android:name=".authenticator.service.AccountAuthenticatorService"
+            android:exported="false"
+            android:process=":auth">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity android:name=".authenticator.ui.EditUserActivity"
+                  android:windowSoftInputMode="stateHidden"
+                android:parentActivityName=".home.ui.HomeActivity">
+        </activity>
+        <activity android:name=".authenticator.ui.EditPasswordActivty"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".authenticator.ui.EditPasswordActivty">
+        </activity>
+
+        <activity
+            android:name=".profile.ui.ChangePasswordActivity"
+            android:parentActivityName=".authenticator.ui.AuthenticatorActivity">
+        </activity>
+        <activity
+            android:name=".profile.ui.ResetPasswordSuccessActivity"
+            android:parentActivityName=".authenticator.ui.AuthenticatorActivity">
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider990958650958298"
+            android:exported="true" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+
+        <activity
+            android:name=".places.ui.MyAddressActivity"
+            android:parentActivityName=".home.ui.HomeActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home.ui.HomeActivity" />
+        </activity>
+        <activity android:name=".check.ui.CheckListActivity"
+                  android:parentActivityName=".places.ui.MyAddressActivity"
+                  android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".places.ui.MyAddressActivity" />
+
+        </activity>
+        <activity
+            android:name=".check.ui.ShareChecklistActivity"
+            android:label="@string/title_activity_share_checklist"
+            android:theme="@style/Theme.DragonFly"
+            android:parentActivityName=".places.ui.MyAddressActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".places.ui.MyAddressActivity" />
+        </activity>
+    </application>
+</manifest>

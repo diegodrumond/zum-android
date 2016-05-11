@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="normal_person_name_placeholder">Luke Skywalker</string>
+    <string name="email_placeholder">luke.skywalker@gmail.com</string>
+    <string name="short_text_placeholder">Integer placerat imperdiet lacus ut.</string>
+    <string name="medium_text_placeholder">Fusce eu ornare ante, eu vulputate ex. Nunc consequat.</string>
+    <string name="long_text_placeholder">Sed tincidunt eros a augue finibus, eu viverra lorem maximus. Nam placerat ultrices lectus, vel mattis dui.</string>
+    <string name="longest_text_placeholder">Pellentesque interdum, nulla vitae iaculis ornare, arcu nisi porttitor nibh, eu sodales enim orci vel risus. Proin bibendum aliquet sollicitudin. Vestibulum nunc risus, molestie mattis dignissim vitae, feugiat sit.</string>
+    <string name="date_placeholder">27/11/2005</string>
+    <string name="date_time_placeholder">27/11/2005 17:00</string>
+    <string name="time_placeholder">1:00</string>
+    <string name="number_placeholder">1.235</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Zum</string>
+
+    <string name="empty" translatable="false" />
+
+    <string name="navigation_drawer_open">Abrir o menu de navegação lateral</string>
+    <string name="navigation_drawer_close">Fechar o menu de navegação lateral</string>
+
+    <!-- Activities names -->
+    <string name="check">Verificar</string>
+    <string name="my_places">Meus locais</string>
+    <string name="places_create">Cadastrar endereço</string>
+    <string name="check_log">Histórico de verificações</string>
+    <string name="invite_friends">Convidar amigos</string>
+    <string name="about">Sobre</string>
+
+    <!-- Validation -->
+    <string name="required_field">Campo obrigatório</string>
+    <string name="invalid_email">E-mail inválido</string>
+    <string name="invalid_password">A senha deve ter no mínimo 6 caracteres</string>
+    <string name="password_dont_match">As senhas não conferem</string>
+    <string name="not_implemented">Funcionalidade não implementada</string>
+    <string name="email_unavailable">Este e-mail já está sendo utilizado</string>
+
+    <!-- HomeActivity -->
+    <string name="x_period">%s dias</string>
+    <string name="first_check">Faça sua primeira verificação</string>
+    <string name="last_checking">Última verificação</string>
+
+    <!-- AuthenticatorActivity -->
+    <string name="email_label">E-mail</string>
+    <string name="password_label">Senha</string>
+    <string name="sign_in">Entrar</string>
+    <string name="sign_in_help">Esqueceu os seus dados de login?\n<b><u>Obtenha ajuda para entrar.</u></b></string>
+    <string name="sign_up">Não tem uma conta? <b>Cadastre-se</b></string>
+    <string name="sign_up_title">Cadastro</string>
+    <string name="sign_in_facebook">Conectar com facebook</string>
+    <string name="authentication_failed">Usuário ou senha inválidos</string>
+    <string name="or">ou</string>
+    <string name="loading">Aguarde...</string>
+    <string name="app_id">990958650958298</string>
+
+    <!-- SignUpActivity -->
+    <string name="name_label">Nome</string>
+    <string name="password_confirm_label">Confirme sua senha</string>
+    <string name="current_password">Senha Atual</string>
+    <string name="new_password">Nova senha</string>
+    <string name="next">Próximo</string>
+
+    <!-- RedefinePassActivity -->
+    <string name="redefinir_senha_enviar">Enviar</string>
+    <string name="redefinir_senha_continuar">Continuar</string>
+    <string name="message_redefine">Digite seu e-mail ou telefone cadastrado para redefinir sua senha</string>
+    <string name="redefinir_senha_email_label">e-mail ou telefone</string>
+    <string name="redefinir_senha_sucesso">Enviado com sucesso!
+    Chegará no seu e-mail ou mensagem o código para redefinir sua senha</string>
+    <string name="redefinir_senha_codigo_label">Digite o código</string>
+    <string name="redefinir_senha_nova_senha">Nova senha</string>
+    <string name="redefinir_senha_repita_senha">Repita a nova senha</string>
+    <string name="redefinir_senha_salvar">Salvar</string>
+
+    <!-- Http errors -->
+    <string name="status_500">Ocorreu um erro não esperado</string>
+    <string name="status_400">Verifique se todos os campos foram preenchidos corretamente</string>
+
+    <!-- PlacesCreateActivity -->
+    <string name="places_label">Nome do local</string>
+    <string name="places_address">Endereço do local</string>
+    <string name="places_find">Encontrar</string>
+    <string name="places_save">Salvar</string>
+    <string name="places_start_message">Busque seu endereço</string>
+    <string name="places_not_found">Endereço não encontrado</string>
+    <string name="places_unknown_error">Não foi possível pesquisar o endereço</string>
+
+    <!-- Places -->
+    <string name="places">Endereço cadastrados</string>
+    <string name="places_backdrop_text">Cadastre seu endereço manualmente ou aponte no mapa para que possa disponibilizar a verificação</string>
+    <string name="zip_code">CEP: %s</string>
+    <string name="places_add">Adicionar endereço</string>
+    <string name="places_empty_list">Seus endereços cadastrados aparecerão aqui</string>
+    <string name="delete">Excluir</string>
+    <string name="edit">Alterar</string>
+
+    <string name="pleaseWait">Por favor</string>
+    <string name="webpage_being_loaded">Aguarde</string>
+    <string name="about_title_logo">HOTMART • 07/05/2016</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title_warning">Atenção!</string>
+    <string name="dialog_yes">Sim</string>
+    <string name="dialog_no">Não</string>
+    <string name="really_delete_place">Você deseja realmente excluir este local?</string>
+
+    <!-- MyAddressActivity -->
+    <string name="my_addres_title">Verificar endereço</string>
+
+    <!-- AboutActivity -->
+    <string name="dev_name">%s • </string>
+    <string name="tutorial_anterior">Anterior</string>
+    <string name="tutorial_comecar">Começar</string>
+    <string name="tutorial_next">Próximo</string>
+    <string name="tutorial_jump">Pular</string>
+    <string name="tutorial_1">Até novembro de 2015 foram notificados 1.248 casos suspeitos de microcefalia, doença relacionada ao zika vírus, identificados em 311 municípios de 14 estados do Brasil. Em 2016 já foram registrados 170.103 casos prováveis de dengue no país.</string>
+    <string name="tutorial_2">O mosquito transmissor dos vírus da dengue, zika, febre amarela e chikungunya será o nosso alvo. Queremos a sua ajuda para desenvolvermos um aplicativo que contribua com a luta contra o Aedes aegypt.</string>
+    <string name="share_with">Convidar usando</string>
+    <string name="hackathon_url">https://www.hotmart.com/hackathon</string>
+    <string name="share_message">Venha conhecer o aplicativo %s.\nAplicativo criado no https://www.hotmart.com/hackathon</string>
+    <string name="history_address">%1$s, %2$s %3$s - CEP %4$s</string>
+
+    <!-- CheckListActivity -->
+    <string name="checklistbutton"><b>Concluir verificação</b></string>
+    <string name="title_activity_share_checklist">ShareChecklistActivity</string>
+
+    <!-- ShareChecklistActivity -->
+    <string name="my_place">Nome do local</string>
+    <string name="share"><b>Compartilhar</b></string>
+    <string name="shareTitle">Verificação Concluída</string>
+    <string name="text_share">Eu já fiz a minha parte contra o Aedes aegypti! Faça também a sua! - https://www.hotmart.com/hackathon</string>
+</resources>

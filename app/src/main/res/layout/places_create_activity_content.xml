@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".places.ui.PlacesCreateActivity"
+    tools:showIn="@layout/places_create_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/places_create_form"
+        android:background="@color/very_light_gray">
+
+        <TextView
+            android:id="@+id/places_create_start_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/places_start_message"
+            android:drawableTop="@drawable/ic_search_place"
+            android:drawablePadding="15dp"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.DragonFly.PlacesCreateActivity.Text1" />
+
+        <ViewSwitcher
+            android:id="@+id/places_create_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/places_create_map_container">
+                <fragment
+                    android:id="@+id/places_create_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/map_dummy_fragment" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/places_create_not_found">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/places_not_found"
+                    android:drawableTop="@drawable/ic_place_not_found"
+                    android:drawablePadding="15dp"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/TextAppearance.DragonFly.PlacesCreateActivity.Text1" />
+            </RelativeLayout>
+
+        </ViewSwitcher>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/places_create_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/places_create_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/places_label"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/places_create_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/places_address"
+                android:padding="10dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/places_create_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/places_find"
+                android:background="@drawable/btn_secondary"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/places_create_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/places_save"
+                android:background="@drawable/btn_primary"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

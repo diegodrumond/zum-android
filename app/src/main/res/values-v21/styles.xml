@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.DragonFly.WithNavDrawer" parent="Theme.DragonFly">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

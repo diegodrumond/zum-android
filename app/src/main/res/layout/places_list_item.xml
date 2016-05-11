@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/place_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/list_item_horizontal_margin"
+    android:paddingLeft="@dimen/list_item_vertical_margin"
+    android:paddingRight="@dimen/list_item_vertical_margin"
+    android:paddingTop="@dimen/list_item_horizontal_margin"
+    tools:context=".places.ui.PlacesActivity">
+
+    <ImageView
+        android:id="@+id/pin_image"
+        android:layout_width="@dimen/places_activity_image_list_item_size"
+        android:layout_height="@dimen/places_activity_image_list_item_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_color_accent"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_place_pin" />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/list_item_horizontal_margin"
+        android:layout_marginStart="@dimen/list_item_horizontal_margin"
+        android:layout_toEndOf="@+id/pin_image"
+        android:layout_toLeftOf="@+id/btn_menu"
+        android:layout_toRightOf="@+id/pin_image"
+        android:layout_toStartOf="@+id/btn_menu"
+        android:maxLines="1"
+        android:text="@string/short_text_placeholder"
+        android:textAppearance="@style/TextAppearance.DragonFly.PlacesActivity.ListItem.Text1" />
+
+    <TextView
+        android:id="@+id/place_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/place_name"
+        android:layout_alignStart="@+id/place_name"
+        android:layout_below="@+id/place_name"
+        android:layout_toLeftOf="@+id/btn_menu"
+        android:layout_toStartOf="@+id/btn_menu"
+        android:maxLines="1"
+        android:text="@string/long_text_placeholder"
+        android:textAppearance="@style/TextAppearance.DragonFly.PlacesActivity.ListItem.Text2" />
+
+    <TextView
+        android:id="@+id/place_zip_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/place_address"
+        android:layout_alignStart="@+id/place_address"
+        android:layout_below="@+id/place_address"
+        android:layout_toLeftOf="@+id/btn_menu"
+        android:layout_toStartOf="@+id/btn_menu"
+        android:maxLines="1"
+        android:text="@string/short_text_placeholder"
+        android:textAppearance="@style/TextAppearance.DragonFly.PlacesActivity.ListItem.Text2" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/list_item_horizontal_margin"
+        android:layout_marginStart="@dimen/list_item_horizontal_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/grayish_blue"
+        app:srcCompat="@drawable/ic_more_vertical" />
+</RelativeLayout>

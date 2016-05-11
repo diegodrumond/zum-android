@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tema principal -->
+    <color name="colorPrimary">@color/mostly_pure_pink</color>
+    <color name="colorPrimaryDark">@color/strong_pink</color>
+    <color name="colorAccent">@color/sea</color>
+    <color name="defaultBackground">@color/white</color>
+
+    <!-- Paleta de cores principal -->
+    <color name="mostly_pure_pink">#f3003f</color>
+    <color name="strong_pink">#b80030</color>
+    <color name="dark_red">#75001F</color>
+    <color name="light_red">#A9002B</color>
+
+    <color name="darkish_pink">#e84a5d</color>
+    <color name="sea">#3ca38c</color>
+    <color name="dark_moderate_blue">#2b467e</color>
+    <color name="denim_blue">#3b5998</color>
+    <color name="neon_red">#f30040</color>
+    <color name="dark_slate_blue">#223a6a</color>
+
+    <!-- Paleta PB -->
+    <color name="white">#ffffff</color>
+    <color name="white_three">#d6d6d6</color>
+    <color name="very_light_gray">#f5f5f5</color>
+    <color name="light_gray">#d8d8d8</color>
+    <color name="grayish_blue">#c7c7cc</color>
+    <color name="grayish_brown">#4a4a4a</color>
+    <color name="gray">#b3b3b3</color>
+    <color name="dark_grey">#979797</color>
+    <color name="black">#000000</color>
+
+    <!-- Paleta PB com transparência -->
+    <color name="transparent_gray_30">#4dd6d6d6</color>
+    <color name="transparent_white_40">#66ffffff</color>
+    <color name="transparent_black_50">#80000000</color>
+    <color name="transparent_black_30">#4d000000</color>
+
+</resources>

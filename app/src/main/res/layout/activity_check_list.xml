@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hotmart.dragonfly.check.ui.CheckListActivity">
+
+    <include layout="@layout/app_default_appbar"
+        android:id="@+id/checkListTollbar"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avloadingIndicatorView"
+        android:layout_below="@+id/checkListTollbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:indicator="BallScaleRippleMultiple"
+        app:indicator_color="@color/colorPrimary" />
+
+    <include layout="@layout/address_list_item"
+             android:id="@+id/addressItem"
+             android:layout_below="@+id/checkListTollbar"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addressItem"
+        android:layout_above="@+id/buttonLayout"/>
+    
+    <FrameLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/sign_up_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checklistbutton"
+            android:background="@drawable/btn_primary"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

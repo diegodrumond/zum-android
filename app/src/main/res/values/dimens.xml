@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_item_horizontal_margin">8dp</dimen>
+    <dimen name="list_item_vertical_margin">@dimen/activity_vertical_margin</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="home_activity_space_between_button_and_text">52dp</dimen>
+
+    <dimen name="nav_menu_text1">33sp</dimen>
+    <dimen name="nav_menu_text2">29sp</dimen>
+
+    <dimen name="nav_menu_vertical_margin">0dp</dimen>
+
+    <!-- Places Activity -->
+    <dimen name="places_activity_backdrop_pin_image_size">38dp</dimen>
+    <dimen name="places_activity_image_list_item_size">55dp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="places_backdrop_text_vertical_margin">50dp</dimen>
+</resources>
